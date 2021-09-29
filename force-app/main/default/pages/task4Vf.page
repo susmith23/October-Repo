@@ -1,0 +1,22 @@
+<apex:page controller="task4cls" standardStylesheets="false">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:repeat value="{!lineItem}" var="a">
+                <dl>
+                    <dt>Merchandise Name:</dt>
+                    <dd><apex:inputField value="{!a.Name}"/></dd>
+                    <apex:commandButton action="{!save}" value="Save"/>
+                </dl>
+
+                <dl>
+                    <dt>Invoice Name:</dt>
+                </dl>
+                <apex:repeat value="{!lineItem}" var="b">
+                    <dl>
+                        <dd><apex:inputField value="{!b.Name}"/></dd>
+                    </dl>
+                </apex:repeat>
+            </apex:repeat>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
