@@ -23,6 +23,7 @@ public class AccountProcessorTest {
         System.assertEquals(Integer.valueOf(Acc.Number_of_Contacts__c),0);
 
         System.debug('this is added from VS');
+        System.debug('heyy');
     }
     
 }
