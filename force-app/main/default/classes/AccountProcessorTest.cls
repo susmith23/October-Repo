@@ -21,6 +21,8 @@ public class AccountProcessorTest {
         
         Account Acc = [Select Number_of_Contacts__c from Account where Id = :a.Id LIMIT 1];
         System.assertEquals(Integer.valueOf(Acc.Number_of_Contacts__c),0);
+
+        System.debug('this is added from VS');
     }
     
 }

@@ -8,6 +8,7 @@ public class AccountProcessor {
             List<Contact> listContact = acc.Contacts;
             acc.Number_of_Contacts__c = listContact.size();
             System.debug('this is added from VS');
+            System.debug('this is added from VS');
         }
         update listAccount;
     }
