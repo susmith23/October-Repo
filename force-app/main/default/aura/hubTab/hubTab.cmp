@@ -1,0 +1,30 @@
+<aura:component controller="hubTab" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="Hubs" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    
+    <div class="slds"> 
+
+    <table class="slds-table slds-table--bordered">
+        <thead>
+            <tr>
+                <th scope="col"><span class="slds-truncate">Name</span></th>
+                <th scope="col"><span class="slds-truncate">Location</span></th>
+                <th scope="col"><span class="slds-truncate">Rating</span></th>
+                <th scope="col"><span class="slds-truncate">State</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.Hubs}" var="hub">
+                <tr style="{!'background:'+hub.Rating_Color__c}">
+                    <td><a onclick="{!c.handleHubname}" id="{!hub.Id}">{!hub.Name}</a></td>
+                    <td>{!hub.Location__Latitude__s},&nbsp;{!hub.Location__Longitude__s}</td>
+                    
+                    <td>{!hub.Rating__c}</td>
+                    <td>{!hub.State__c}</td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+        </div>
+</aura:component>

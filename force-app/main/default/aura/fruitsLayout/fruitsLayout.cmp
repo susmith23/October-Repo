@@ -1,0 +1,19 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <lightning:layout multipleRows="true" verticalAlign="stretch">
+    <lightning:layoutItem size="12" class="border-1px"> <h2 style="text-align: center;">Fruit Items</h2></lightning:layoutItem>
+    <lightning:layoutItem size="12" padding="around-small">
+        <lightning:layout multipleRows="true">
+            <lightning:layoutItem size="4" class="rowone">Apple</lightning:layoutItem>
+            <lightning:layoutItem size="4" class="rowone">Watermelon</lightning:layoutItem>
+            <lightning:layoutItem size="4" class="rowone">Pineapple</lightning:layoutItem> 
+            <lightning:layoutItem size="4" class="rowtwo">Guava</lightning:layoutItem>
+            <lightning:layoutItem size="4" class="rowtwo">Sweetlime</lightning:layoutItem>
+            <lightning:layoutItem size="4" class="rowtwo">Papaya</lightning:layoutItem>
+            <lightning:layoutItem size="4" class="rowthree">Grapes</lightning:layoutItem>
+            <lightning:layoutItem size="4" class="rowthree">Orange</lightning:layoutItem>
+            <lightning:layoutItem size="4" class="rowthree">Lemon</lightning:layoutItem>
+        </lightning:layout>
+    </lightning:layoutItem>
+    <lightning:layoutItem size="12" class="border-1px"> <h2 style="text-align: center;">Enough Fruits for Today</h2></lightning:layoutItem>
+</lightning:layout>
+</aura:component>

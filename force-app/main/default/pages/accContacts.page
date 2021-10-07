@@ -1,0 +1,19 @@
+<apex:page controller="accCon37" standardStylesheets="false">
+    <apex:pageBlock >
+        <apex:repeat value="{!displayAccounts}" var="acc">
+            <dl>
+                <dt>Account Name:</dt>
+                <dd><apex:outputText value="{!acc.Name}"/></dd> 
+            </dl>
+
+            <dl><dt>Contacts:</dt></dl>
+
+            <apex:repeat value="{!acc.Contacts}" var="cont">
+                <dl>
+                    <dd><apex:outputText value="{!cont.Name}"/></dd>
+                </dl>
+            </apex:repeat>
+        </apex:repeat>
+
+    </apex:pageBlock>
+</apex:page>

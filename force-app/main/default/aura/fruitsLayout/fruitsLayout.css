@@ -1,0 +1,43 @@
+.THIS .border-1px {
+    width: 800px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    background-color: white;
+}
+
+.THIS .rowone {
+    width: 250px;
+    border: 1px solid black;
+    padding: 40px;
+    margin: 20px;
+    background-color: white;
+}
+
+.THIS .rowtwo {
+    width: 250px;
+    border: 1px solid black;
+    padding: 40px;
+    margin: 20px;
+    background-color: white;
+}
+
+.THIS .rowthree {
+    width: 250px;
+    border: 1px solid black;
+    padding: 40px;
+    margin: 20px;
+    background-color: white;
+}
+
+.THIS .rowone {
+    text-align: center;
+}
+
+.THIS .rowtwo {
+    text-align: center;
+}
+
+.THIS .rowthree {
+    text-align: center;
+}

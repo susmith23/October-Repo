@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title='Mumbai Indians 2021 IPL Team List'>
+        <ul>
+            <template for:each={cricketers} for:item="item">
+                    <li key={item.No}>
+                        <lightning-badge label={item.pName}></lightning-badge>
+                    </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

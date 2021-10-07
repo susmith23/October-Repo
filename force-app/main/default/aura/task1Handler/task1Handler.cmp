@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:attribute name="messageFromEvent" type="String"/>
+    <aura:handler name="compEvent" event="c:task1" action="{!c.handleComponentEvent}"/>
+    <c:taskone />
+    <p>{!v.messageFromEvent}</p>
+   	
+</aura:component>

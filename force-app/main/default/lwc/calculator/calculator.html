@@ -1,0 +1,67 @@
+<template>
+    
+    <lightning-card title="Lightning Calculator">
+        
+        <lightning-input
+        type="number"
+        name="firstNumber"
+        label="First Number"
+        placeholder="Type any number..."
+        value="number1"
+        required
+        message-when-value-missing="Please enter a number"
+        class="slds-box slds-box_x-small slds-text-align_left slds-m-around_x-small"
+        onchange={handleChange}></lightning-input>
+                
+        <lightning-input
+        type="number"
+        name="secondNumber"
+        label="Second Number"
+        placeholder="Type any number..."
+        value="number2"
+        required
+        message-when-value-missing="Please enter a number"
+        class="slds-box slds-box_x-small slds-text-align_left slds-m-around_x-small"
+        onchange={handleChange}></lightning-input>
+                
+        <lightning-button
+        variant="Brand"
+        label="Add"
+        title="Add"
+        onclick={add}
+        class="slds-m-left_x-small"
+        ></lightning-button>
+                
+        <lightning-button
+        variant="Brand"
+        label="Sub"
+        title="Sub"
+        onclick={sub}
+        class="slds-m-left_x-small"
+        ></lightning-button>
+                
+        <lightning-button
+        variant="Brand"
+        label="Mul"
+        title="Mul"
+        onclick={mul}
+        class="slds-m-left_x-small"
+        ></lightning-button>
+                
+        <lightning-button
+        variant="Brand"
+        label="Div"
+        title="Div"
+        onclick={div}
+        class="slds-m-left_x-small"
+        ></lightning-button>
+        
+        <div>
+            <p>Result of Num1 {operator} Num2 is {result}</p>
+        </div> 
+        
+        <template for:each={resultData} for:item="result" for:index="index">
+            {result.index}
+        </template>
+    </lightning-card>    
+</template>

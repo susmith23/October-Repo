@@ -1,0 +1,4 @@
+<aura:component >
+    <c:task2Notifier/>
+    <c:task2Handler/>	
+</aura:component>

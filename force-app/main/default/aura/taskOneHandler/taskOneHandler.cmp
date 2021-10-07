@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="messageFromEvent" type="String"/>
+    
+    <aura:handler name="cmpEvent" event="c:task1" action="{!c.handleComponentEvent}"/>
+    
+    <c:task1Notifier/>
+    
+    <p>{!v.messageFromEvent}</p>
+</aura:component>
