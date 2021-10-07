@@ -12,6 +12,8 @@ public class AccountProcessor {
         }
         update listAccount;
         System.debug('hello1 ');
+
+        System.debug('hey ');
     }
 
 }
